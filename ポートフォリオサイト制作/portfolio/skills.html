@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>skills</title>
+        <title>Mill Design portfolio site</title>
         <link rel="stylesheet" href="css/style.css" />
        
     </head>
@@ -111,7 +111,7 @@
                     </div>
 
                     <div class="skills_illustrator_word">
-                        名刺・ロゴ・フライヤー・バナーなどの制作ができます
+                        Webサイト・LP・バナーなどの制作ができます
                     </div>
                     <div class="skills1">
                         <div class="botann">
@@ -152,7 +152,7 @@
                     <img src="Photo/yaziruchi@2x.png" alt="yazirushi" />
                 </div>
 
-            <div class="skills01 skills_infowrap">
+            <div class="skills03 skills_infowrap">
                 <div class="skills1">
                     <div class="botann">
                         <img src="Photo/botann@2x.png" alt="botann" />
@@ -309,62 +309,38 @@
                 });
         </script>
 
-<!-- <script>
-    $(function(){
-      $('.accordion').click(function(){
-        $('.accordion').removeClass('active');
-        $(this).addClass('active');
-    
-        const id = $(this).attr('class');
-        
-        if ($(this).hasClass('yazirushi_graphic')) {
-          $('.skills01').show();
-        } else if ($(this).hasClass('yazirushi_web')) {
-          $('.skills02').show();
-        } else if ($(this).hasClass('yazirushi_coding')) {
-          $('.skills03').show();
-        }
-      });
-    });
-        </script> -->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script>
-         $(function () {
-  
-  $('.skills_infowrap').hide();
+            $(function () {
+              $('.skills_infowrap').hide();
+          
+              $('.accordion').click(function () {
+                const $this = $(this);
+                const $img = $this.find('img');
+                const isActive = $this.hasClass('active');
+          
+                $('.accordion').removeClass('active');
+                if($img.attr('src'), 'Photo/yaziruchi@2x.png'){
+                    $img.attr('src','Photo/yazueysgu_up@2x.png');
+                }else{
+                    $img.attr('src','Photo/yaziruchi@2x.png');
 
-  $('.accordion').click(function () {
-    const $this = $(this);
-    const $img = $this.find('img');
-    const isActive = $this.hasClass('active');
-
-
-    $('.accordion').removeClass('active');
-    $('.accordion img').attr('src', function () {
-      return $(this).attr('src').replace('portfolio/Photo/yazueysgu_up@2x.png', 'portfolio/Photo/yaziruchi@2x.png');
-    });
-
+                }
+             
+          
     
-    $('.skills').slideUp();
-
-  
-    if (isActive) return;
-
-    
-    if ($this.hasClass('yazirushi_graphic')) {
-      $('.skills01').slideDown();
-    } else if ($this.hasClass('yazirushi_web')) {
-      $('.skills02').slideDown();
-    } else if ($this.hasClass('yazirushi_coding')) {
-      $('.skills03').slideDown();
-    }
-
-    
-    $this.addClass('active');
-    $img.attr('src', $img.attr('src').replace('portfolio/Photo/yaziruchi@2x.png', 'portfolio/Photo/yazueysgu_up@2x.png'));
-  });
-});
+          
+                  
+                if ($this.hasClass('yazirushi_graphic')) {
+                  $('.skills01').slideToggle();
+                } else if ($this.hasClass('yazirushi_web')) {
+                  $('.skills02').slideToggle();
+                } else if ($this.hasClass('yazirushi_coding')) {
+                  $('.skills03').slideToggle();
+                }
+              });
+            });
           </script>
 
 <script src="script.js"></script>

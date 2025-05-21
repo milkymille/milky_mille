@@ -134,7 +134,7 @@
            
            
               <div class="view_more_about_wrap">
-                <a href="about.html">
+                <a href="about.html" class="scroll_area_viewmore">
                 <div class="view_more_word"> 
                      <img src="Photo/viwemoreset@2x.png" alt="view more" /></div>
                     <div class="view_more_yazirushi">
@@ -182,7 +182,7 @@
                 </div>
             </div>
             <div class="view_more_skills">
-                <a href="skills.html">
+                <a href="skills.html" class="scroll_area_viewmore">
                 <div class="view_more_word_skills"> 
                      <img src="Photo/viwemoreset@2x.png" alt="view more" /></div>
                     <div class="view_more_yazirushi_skills">
@@ -209,20 +209,15 @@
     
 
                     <div class="carousel_item">
-                      <a
-                        href="Photo/hamburger_POP@2x.png"
-                        data-lightbox="carousel_item_big"
-                        data-title="ハンバーガーバナー"
-                        class="image-overlay-wrapper"
-                      >
                         <img
                           src="Photo/hamburger_POP@2x.png"
                           class="img-gallery"
                           alt="ハンバーガーバナー"
                         />
-                        <div class="mask">
+                        <a href="about.html"> <div class="mask">
                         <div class="overlay-text">激旨バーガー新発売<br>BANNER/Design</div>
-                    </div> </a>
+                    </div> 
+                </a>
                     </div>
                   
                     <div class="carousel_item">
@@ -459,7 +454,7 @@
                 </div>
             </div>
             <div class="view_more_works">
-                <a href="works.html">
+                <a href="works.html" class="scroll_area_viewmore">
                 <div class="view_more_word_works"> 
                      <img src="Photo/viwemoreset@2x.png" alt="view more" /></div>
                     <div class="view_more_yazirushi_works">
@@ -510,7 +505,6 @@
         </footer>
 
         <footer class="footer-sp">
-            <div class="footer_top_line_nav-sp"></div>
             <div class="footer-inner_sp">
                 <nav class="footer_nav-sp">
                     <ul>
@@ -530,7 +524,6 @@
                         <img src="Photo/instagram@2x.png" alt="Instagram" />
                     </div>
             </div>
-            <div class="footer_bottom_line_nav-sp"></div>
             <div class="footer-left_nav-sp">© 2025 MILKY</div>
         </footer></main>
         <script>
@@ -549,7 +542,7 @@
             (function (d) {
                 var config = {
                         kitId: "chk7drm",
-                        scriptTimeout: 3000,
+                        scriptTimeout: 10,
                         async: true,
                     },
                     h = d.documentElement,
