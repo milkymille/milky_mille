@@ -85,7 +85,7 @@
                     <img src="Photo/header.png" alt="海の写真" />
                 </picture>
                 
-                <p class="word">心に届ける<br /><br />想いをカタチに</p>
+                <p class="stamp-text">心に届ける<br /><br />想いをカタチに</p>
             </div>
         </header>
         <main>
@@ -533,6 +533,10 @@
             </div>
             <div class="footer-left_nav-sp">© 2025 MILKY</div>
         </footer></main>
+
+
+
+        
         <script>
             $(document).ready(function () {
                 $(".skills-slider").slick({
@@ -671,7 +675,56 @@
         });
       </script> -->
 
-      
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(document).ready(function() {
+          // Function to check if element is in viewport
+          function isElementInViewport(el) {
+            var top = el.offset().top;
+            var height = el.outerHeight();
+            var windowTop = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            return top < windowTop + windowHeight && top + height > windowTop;
+          }
+    
+          // Handle scroll event
+          $(window).on('scroll', function() {
+            var $stamp = $('.stamp');
+            // Check if stamp is in viewport and not yet animated
+            if (isElementInViewport($stamp) && !$stamp.hasClass('visible')) {
+              $stamp.addClass('visible');
+            }
+          });
+    
+          // Trigger scroll check on page load
+          $(window).trigger('scroll');
+        });
+      </script>
+      <script>
+        $(document).ready(function() {
+          // Function to check if element is in viewport
+          function isElementInViewport(el) {
+            var top = el.offset().top;
+            var height = el.outerHeight();
+            var windowTop = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            return top < windowTop + windowHeight && top + height > windowTop;
+          }
+    
+          // Handle scroll event
+          $(window).on('scroll', function() {
+            var $footer = $('.header_photo');
+            var $stampText = $('#stamp-text');
+            // Check if footer is in viewport and text not yet animated
+            if (isElementInViewport($footer) && !$stampText.hasClass('visible')) {
+              $stampText.addClass('visible');
+            }
+          });
+    
+          // Trigger scroll check on page load
+          $(window).trigger('scroll');
+        });
+      </script>
 
       
 </body>

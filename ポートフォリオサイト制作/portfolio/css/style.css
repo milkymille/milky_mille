@@ -425,7 +425,6 @@ picture {
 }
 
 
-
 .view_more_skills {
     display: flex;
     justify-content: flex-end;
@@ -553,6 +552,7 @@ picture {
     justify-content: flex-end;
     margin-right: 220px;
     margin-top: 57px;   
+    margin-bottom: 175px;
 }
 
 
@@ -561,66 +561,54 @@ picture {
 .contact{
     margin-bottom: 274px;
 }
-.postcard {
-  max-width: 670px;
-  display: block;
-  margin: 0 auto;
-  position: relative; 
-  opacity: 5s;
-  transform: translateY(-150px) scale(1.1);
-}
+    
+    .contact_photo_img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-.postcard.show {
-  animation: softDropIn 1.2s ease-out forwards;
-}
-
-@keyframes softDropIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-150px) scale(1.1);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
+  
+    .postcard {
+      position: relative;
+      max-width: 670px; 
+      
+    }
 
 
-.stamp {
-  position: absolute;
-  top: -25px;
-  right: -60px;
-  background: url('stamp.png') no-repeat center center / contain;
-  max-width: 180px;
-  opacity: 0;
-  transform: scale(1.4);
-  z-index: 10;
-  display: block;
-}
+    .postcard img[alt="contact"] {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 
-/* アニメーションをつけるクラス */
-.stamp.show {
-  animation: stampPush 0.5s ease-out forwards;
-}
+ 
+    .stamp {
+      position: absolute;
+      top: 5px; 
+      right: -60px; 
+      max-width: 180px; 
+      opacity: 0; 
+      transform: scale(0); 
+      transition: all 0.3s ease-out;
+    }
 
-@keyframes stampPush {
-  0% {
-    opacity: 0;
-    transform: translateY(-100px) scale(1.4) rotate(-5deg);
-  }
-  40% {
-    opacity: 1;
-    transform: translateY(10px) scale(1.1) rotate(2deg);
-  }
-  70% {
-    opacity: 1;
-    transform: translateY(-5px) scale(1.03) rotate(-1deg);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1) rotate(0deg);
-  }
-}
+    
+    .stamp.visible {
+      opacity: 1;
+      transform: scale(1.1); 
+      animation: stampEffect 0.3s ease-out forwards;
+    }
+
+    
+    @keyframes stampEffect {
+      0% { transform: scale(0.8); }
+      50% { transform: scale(1.2); } 
+      100% { transform: scale(1); } 
+    }
+
+
 .thankyou{
     margin-bottom: 255px;
 }
@@ -655,6 +643,9 @@ picture {
     justify-content: space-between;
     align-items: start;
     flex-wrap: wrap;
+    border-bottom: 1px solid #c5efef;
+    border-top: 1px solid #c5efef;
+    padding: 25px;
   }
   
 
@@ -673,7 +664,6 @@ picture {
     font-family: "trajan-pro-3", "serif";
     font-weight: 400;
     font-style: normal;;
-    margin-bottom: 20px;
   }
   
   .footer-right {
@@ -681,8 +671,11 @@ picture {
     justify-content: flex-end;
     align-items: center;
     gap: 10px;
-    font-size: 15px;
     color: #9ec6c8;
+  }
+
+  .finduson{
+    width: 73px;
   }
   
   .instaicon{
@@ -1088,9 +1081,22 @@ picture {
   }
 
 
-  .botann{
+  .botann {
     width: 13px;
-    margin-right: 4px;
+    margin-right: 3px;
+    animation: spinY 1.5s linear infinite;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    display: inline-block;
+  }
+  
+  @keyframes spinY {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
   }
 
 
@@ -1115,6 +1121,10 @@ picture {
     height: 1px;
     background-color: #b7e4e3;
   }
+
+
+
+  
   
   .skills1{
     flex-direction: row;
@@ -1286,7 +1296,7 @@ button {
 }
 
 .thanks_word{
-  margin-left: 220px;
+  margin-left: 15%;
   margin-bottom:95px ;
 }
 
@@ -1626,6 +1636,45 @@ button {
   margin-bottom: 36px;
 
 }
+.switch1 {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+
+.switch1::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -15px;
+  width: 50px;
+  height: 40px;
+  background-color: #b8f2ff;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+
+.switch1.active::before {
+  opacity: 1;
+}
+
+
+.switch1 img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
 
 .pc_switch{
   max-width: 36px;
@@ -2080,6 +2129,44 @@ button {
 }
 
 
+.text-container {
+  display: flex;
+  color: #5ed2d5;
+  font-family:"trajan-pro-3", "serif";;
+  font-size: 24px;
+  gap: 20px; 
+  justify-content: center;
+  height: 50px;
+}
+
+.text-container span {
+  display: inline-block;
+  width: 30px; 
+  text-align: center; 
+  animation: grow 2.4s infinite;
+  transform-origin: center; 
+}
+
+
+.text-container span:nth-child(1) { animation-delay: 0s; }
+.text-container span:nth-child(2) { animation-delay: 0.3s; }
+.text-container span:nth-child(3) { animation-delay: 0.6s; }
+.text-container span:nth-child(4) { animation-delay: 0.9s; }
+.text-container span:nth-child(5) { animation-delay: 1.2s; }
+.text-container span:nth-child(6) { animation-delay: 1.5s; }
+.text-container span:nth-child(7) { animation-delay: 1.8s; }
+.text-container span:nth-child(8) { animation-delay: 2.1s; }
+
+
+@keyframes grow {
+  0%, 100% {
+    transform: scale(1);
+  }
+  12.5% {
+    transform: scale(3); 
+  }
+}
+
 
 
 
@@ -2502,9 +2589,11 @@ button {
 .thankyou{
   margin-bottom: 113px;
 }
-.thankyou_wave{
-  align-items: center;
+
+.text-container {
+  font-size: 15px;
 }
+
 
   .footer-pc {
     display: none;
@@ -2530,9 +2619,14 @@ button {
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
-
+  
   }
   
+  .footer-inner_sp{
+    border-bottom: 1px solid #bce3e2;
+    border-top: 1px solid #bce3e2;
+    padding-top: 45px;
+  }
  
   
 
@@ -2886,12 +2980,18 @@ margin-top: 81px;
 
 .thanks_sentece1{
   font-size: 29px;
-  width: 300px;
+  width: 100%;
   margin-bottom: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  align-items: center;
+  text-align: center;
 }
 
 .thanks_sentece2{
-  width: 330px;
+  width: 100%;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 
@@ -3321,8 +3421,19 @@ margin-top: 81px;
   }
   
   
+  .view_more_about_wrap .view_more_yazirushi{
+    transition: 0.3s;
+  }
   
-   
+  .view_more_about_wrap a:hover .view_more_yazirushi{
+    left:80%;
+  }
+
+  .footer-right_nav-sp .finduson{
+    width: 73px;
+  }
+
+
 
   /* 制作一覧に戻る */
   .backtoall{
@@ -3336,5 +3447,9 @@ margin-top: 81px;
   .backtoall_wrap a:hover .back_to_all_yazirushi{
     left:80%;
   }
+
+
+
+
 
 }
