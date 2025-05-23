@@ -259,13 +259,14 @@ picture {
 .concept_word_img{
   max-width: 470px;
   margin-bottom: 29px;
-  margin-left:220px;
+  margin-left:15%;
 }
 
 .concept_word{
   line-height: 2;
   max-width: 774px;
   margin: 0 auto;
+  margin-left:15%;
 }
 
 
@@ -288,7 +289,7 @@ picture {
 
 .about_word_img{
     max-width:  112px;
-    margin-left: 220px;
+    margin-left: 15%;
     position: relative;
 }
 
@@ -296,7 +297,7 @@ picture {
 .about_img1{
     max-width: 280px;
     margin-top: -29px;
-    margin-left: 125px;
+    margin-left: 8.7%;
 }
 
 .about_img2 {
@@ -340,8 +341,8 @@ picture {
 }
 
 .about_sentence {
-    margin-left: auto;
-    margin-right: 220px;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 50px;
     max-width: 630px;
     line-height: 2.25;
@@ -356,7 +357,7 @@ picture {
 .view_more_works {
   display: flex;
   justify-content: flex-end;
-  margin-right: 220px;
+  margin-right: 15%;
   position: relative; 
 }
 
@@ -392,6 +393,24 @@ picture {
 }
 
 
+.view_more_about_wrap .view_more_yazirushi,
+.view_more_skills .view_more_yazirushi,
+.view_more_works .view_more_yazirushi
+{
+  transition: 0.3s;
+}
+
+.view_more_about_wrap a:hover .view_more_yazirushi,
+.view_more_skills a:hover .view_more_yazirushi,
+.view_more_works a:hover .view_more_yazirushi
+{
+  right:-10px;
+}
+
+
+
+
+
 .skills{
     margin-bottom: 230px;
 }
@@ -399,7 +418,7 @@ picture {
 
 .skills_word_img{
     max-width: 304px;
-    margin-left: 220px;
+    margin-left: 15%;
     margin-bottom: 108px;
 }
 
@@ -429,7 +448,7 @@ picture {
     display: flex;
     justify-content: flex-end;
     margin-top: 57px;
-    margin-right: 220px;
+    margin-right: 15%;
 
 }
 
@@ -463,14 +482,12 @@ picture {
 
 .works_word_img{
     max-width:360px;
-    margin-left: 210px;
+    margin-left: 15%;
     margin-bottom: 107px;
 }
 
 
-.carousel_item{
-    max-width: 480px;
-}
+
 
 .carousel_inner{
     display:flex;
@@ -489,7 +506,7 @@ picture {
 
 
 .carousel_item {
-  max-width: 480px;
+  max-width: 1000px;
 	overflow:		hidden;
 	margin:			10px 8px 10px 16px;
 	position:		relative;
@@ -550,7 +567,7 @@ picture {
 .view_more_works {
     display: flex;
     justify-content: flex-end;
-    margin-right: 220px;
+    margin-right:  15%;
     margin-top: 57px;   
     margin-bottom: 175px;
 }
@@ -724,8 +741,8 @@ picture {
     /* ＝＝ABOUT＝＝＝＝＝＝＝＝ */
 
 .about2{
-    margin-left: 220px;
-    margin-right: 220px;
+    margin-left: 15%;
+    margin-right: 15%;
     max-width: 1440px;
     margin-bottom: 200px;
 }
@@ -1172,9 +1189,6 @@ picture {
     right: 18px;
 }
 
-.carousel_item a {
-    pointer-events: none;
-}
 
 
 
@@ -1184,17 +1198,17 @@ picture {
 
   .contact_warp{
     display: flex;
-    flex-direction: column;     /* 縦並びにする */
-    justify-content: center;    /* 縦方向の中央揃え */
-    align-items: center;        /* 横方向の中央揃え */
+    flex-direction: column;     
+    justify-content: center;    
+    align-items: center;      
     margin-bottom: 234px;
         
   }
   
   .contact_word_img{
     max-width: 493px;
-    margin-left: 220px;
     margin-bottom: 94px;
+    margin-left: 15%;
   }
  
   
@@ -1318,21 +1332,21 @@ button {
   margin-bottom: 92px;
 }
 
-.thanks_sentece2{
+.thanks_sentece2 {
   font-size: 16px;
-  width: 600px;
-  align-items: left;
-  margin: 0 auto;
   color: #779293;
+  max-width: 645px;
+  margin: 0 auto;
   line-height: 1.75;
+  text-align: left;
 }
 
   /* ＝＝WORKS page＝＝＝＝＝＝＝＝ */
 
 
 .works2{
-  margin-left: 220px;
-  margin-right: 220px;
+  margin-left: 15%;
+  margin-right: 15%;
   max-width: 1440px;
 }
 .works_top{
@@ -1467,7 +1481,7 @@ button {
 .image-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   gap: 20px;
   padding: 0;
   margin: 0;
@@ -1528,7 +1542,11 @@ button {
 .works_contents_wrap_hayashi{
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 15%;
+}
+
+.works_contents_wrap_hayashi_sh{
+  display: none;
 }
 
 .works_title
@@ -1631,9 +1649,8 @@ button {
 /* タブレットモックアップ画面スイッチ */
 .switch{
   display: flex;
-  gap: 20px;
+  gap: 10px;
   margin-left: auto;     
-  margin-bottom: 36px;
 
 }
 .switch1 {
@@ -1646,11 +1663,12 @@ button {
 }
 
 
+
 .switch1::before {
   content: "";
   position: absolute;
-  top: 20px;
-  left: -15px;
+  top: 30px;
+  left: -8px;
   width: 50px;
   height: 40px;
   background-color: #b8f2ff;
@@ -1658,8 +1676,14 @@ button {
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 0;
+  left: 50%; 
+  transform: translateX(-50%); 
+
 }
 
+.sh_switch.active::before {
+  width: 35px; 
+}
 
 .switch1.active::before {
   opacity: 1;
@@ -1682,6 +1706,7 @@ button {
 
 .sh_switch{
   max-width: 15px;
+
 }
 
 
@@ -1757,10 +1782,11 @@ button {
 
 
 .meishi_wrap {
-  gap: 40px;
+
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+
 }
 
 .meishi_slide_wrap{
@@ -1882,12 +1908,12 @@ button {
 
 /* ＝＝＝＝ハヤシのモックアップ＝＝＝ */
 .hayashi_all{
-  max-width: 1440px;
+  width: 100%;
   margin-bottom: 144px;
 }
 
 .meishi_wrap_hayashi_sp{
-  display: none;
+  display: none !important;
 }
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
@@ -1930,14 +1956,19 @@ button {
 
 .logo_slider {
   position: relative;
+  height: auto;
 }
 
 
 .meishi_omote img,
 .meishi_ura img{
   max-width: 480px;
-
 }
+
+.meishi_omote{
+  margin-bottom: 10px;
+}
+
 .meishi_ura{
   display: flex;
   justify-content: flex-end;
@@ -2100,6 +2131,17 @@ button {
 .backtoall_wrap {
   display: flex;
   justify-content: flex-end;
+  margin-right: 15%;
+  position: relative; 
+}
+
+
+.backtoall_wrap .back_to_all_yazirushi{
+  transition: 0.3s;
+}
+
+.backtoall_wrap a:hover .back_to_all_yazirushi{
+  left:-20px;
 }
 
 
@@ -2109,9 +2151,11 @@ button {
 }
 
 
+
 .backtoall {
   width: 143px;
   margin-bottom:250px ;
+  position: relative;
 }
 
 .back_to_all_yazirushi {
@@ -2295,6 +2339,8 @@ button {
   background: linear-gradient(to right, #f0faff 70%, #e6f8ff 0 );
   transform-origin: left bottom;
   transition: 0.5s;
+  transform: rotate(90deg);
+  display: block;
 
 }
 
@@ -2303,8 +2349,6 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .sp-nav ul li a {
@@ -2319,7 +2363,7 @@ button {
 }
 
 .sp-nav.active {
-  display: block;
+ transform: rotate(0);
 }
 
 
@@ -2419,31 +2463,39 @@ button {
       position: relative;
       width: 100%;
     }
+
+
   
     .about_img1,
-    .about_img2 {
+    .about_img3_wrapper {
       position: absolute;   
     }
   
+
+
     .about_img1 {
-      margin-top: -100px;               
-      margin-left: 0;    
+      position: absolute;
+      width: 42%;
+      top: -80px;               
+      left: 0;
+      margin-left: 0; 
       z-index: 2;      
     }
   
     .about_img2 {       
-      max-width: 280px;
-      margin-right: 30px;    
-      margin-top: 100px;       
+      width: 72%;
+      position: relative;
+      margin-top: 30px;    
+      margin-left: 21%;   
       z-index: 1;
     }
 
   
   .about_img3_wrapper {
-      display: flex;
-      flex-direction: column;
-      margin-left: -80px;
-      margin-top: 0;
+      position: absolute;
+      right:0;
+      top:0;
+      
   }
   
   .about_img3 {
@@ -2454,11 +2506,8 @@ button {
   
   .about_img4{
     max-width: 150px;
-  }
-  
-  .about_img4{
-      margin-top: 0;
-      margin-left: 50px;
+      margin-top: 90%;
+      margin-right: 19px;
       z-index: 4;
   }
   
@@ -2653,9 +2702,7 @@ button {
     margin-bottom: 5px;
   }
   
-.footer-right_nav-sp img{
-    width: 24px;
-}
+
 
 
 .footer_bottom_line_nav-sp{
@@ -2894,9 +2941,9 @@ button {
   width: 191px;
 }
 .contact_word_img{
-  margin-left: auto;
   margin-bottom: 72px;
   text-align: center;
+  margin-left: 0;
 }
 
 
@@ -2980,7 +3027,7 @@ margin-top: 81px;
 
 .thanks_sentece1{
   font-size: 29px;
-  width: 100%;
+  width: auto;
   margin-bottom: 50px;
   margin-left: 30px;
   margin-right: 30px;
@@ -2989,9 +3036,9 @@ margin-top: 81px;
 }
 
 .thanks_sentece2{
-  width: 100%;
-  margin-left: 30px;
-  margin-right: 30px;
+  width: auto;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 
@@ -3047,7 +3094,17 @@ margin-top: 81px;
   margin-bottom: 270px;
 }
 
+.works_contents_wrap_hayashi{
+  display: none;
+}
 
+.works_contents_wrap_hayashi_sh{
+  display: block;
+  justify-content: center;
+  width: auto;
+  margin-left: 15%;
+  margin-right: 15%;
+}
 
 
 .works_contents_wrap_sh{
@@ -3190,14 +3247,15 @@ margin-top: 81px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 30px;   
- 
+  padding: 0 8%;   
+  height: auto;
   box-sizing: border-box;
 }
 
 .logo_meaning_sp img {
   max-width: 100%;    
   display: block;
+  height: auto;
 }
 
 /* Pc版２sp版１ */
@@ -3321,32 +3379,26 @@ margin-top: 81px;
 
 /* ＝＝＝＝ハヤシのモックアップ＝＝＝ */
 
-
-.meishi_wrap_hayashi_sp{
-  margin-bottom: 86px;
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-
 .hayashi_all{
   display: none;
 }
 
 .meishi_wrap_hayashi_sp {
-  padding: 0 30px; 
+  display: block !important;
+  width: 100%;
+  padding: 0 8%;
+  margin-bottom: 86px;
   box-sizing: border-box;
   text-align: center; 
 }
 
-
-
-
+.meishi_yoko {
+  width: 100%;
+  max-width: 50%;
+  margin-bottom: 16px;
+}
 
 .meishi_yoko img {
-  width: 100%;
-  height: auto;
   display: block;
 }
 
@@ -3399,7 +3451,13 @@ margin-top: 81px;
     max-width:100%;
   }
   
- 
+  .pc_switch{
+    max-width: 25px;
+  }
+  
+  .sh_switch{
+    max-width: 11px;
+  }
   
  
   
@@ -3421,13 +3479,7 @@ margin-top: 81px;
   }
   
   
-  .view_more_about_wrap .view_more_yazirushi{
-    transition: 0.3s;
-  }
-  
-  .view_more_about_wrap a:hover .view_more_yazirushi{
-    left:80%;
-  }
+
 
   .footer-right_nav-sp .finduson{
     width: 73px;
@@ -3445,10 +3497,13 @@ margin-top: 81px;
   }
   
   .backtoall_wrap a:hover .back_to_all_yazirushi{
-    left:80%;
+    left:10px;
   }
 
+  .backtoall_wrap{
+    margin-right: 7%;
 
+  }
 
 
 
