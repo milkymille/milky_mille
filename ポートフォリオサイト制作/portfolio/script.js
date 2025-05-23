@@ -19,32 +19,32 @@
 
   
 
-  const text = "Now Loading...";
-  const target = document.getElementById("loading-text");
-  let i = 0;
+  // const text = "Now Loading...";
+  // const target = document.getElementById("loading-text");
+  // let i = 0;
 
-  function showLetters() {
-    if (i <= text.length) {
-      target.textContent = text.substring(0, i);
-      i++;
-      setTimeout(showLetters, 200); 
-    } else {
-      i = 0;
-      setTimeout(showLetters, 400); 
-    }
-  }
+  // function showLetters() {
+  //   if (i <= text.length) {
+  //     target.textContent = text.substring(0, i);
+  //     i++;
+  //     setTimeout(showLetters, 200); 
+  //   } else {
+  //     i = 0;
+  //     setTimeout(showLetters, 400); 
+  //   }
+  // }
 
-  showLetters();
+  // showLetters();
 
  
-  window.addEventListener("load", () => {
-    setTimeout(() => {
-    document.getElementById("loading-screen").style.opacity= "0";
-  }, 3000); //
-    setTimeout(() => {
-      document.getElementById("loading-screen").style.display = "none";
-    }, 3300); // 
-  });
+  // window.addEventListener("load", () => {
+  //   setTimeout(() => {
+  //   document.getElementById("loading-screen").style.opacity= "0";
+  // }, 3000); //
+  //   setTimeout(() => {
+  //     document.getElementById("loading-screen").style.display = "none";
+  //   }, 3300); // 
+  // });
 
 
 

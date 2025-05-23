@@ -454,7 +454,7 @@ picture {
 
 .skills_photo_wrap{
     max-width: 100%;
-    display: flex !important;
+    display: flex;
     justify-content: center; 
     gap: 4.16%;               
 
@@ -1140,7 +1140,7 @@ picture {
     max-width: 95px;
   }
   .skills_JavaScript{
-    max-width: 79px;
+    max-width: 54px;
   }
   
 
@@ -1778,12 +1778,21 @@ button {
   margin-bottom: 135px;
 }
 
+.meishi_wrap_ciel_inner{
+  display: flex;
+}
+
 
 .meishi_wrap_ciel{
-  display: flex;
   max-width: 1000px;
   margin: 0 auto;
 }
+
+.meishi_yoko_ciel{
+  max-width: 50%;
+}
+
+
 /* ＝＝＝＝スクロール＝＝＝ */
 .scroll_down{
   max-width: 22px;
@@ -1898,7 +1907,7 @@ button {
 }
 
 .meishi_wrap_hayashi_sp{
-  display: none !important;
+  display: none ;
 }
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
@@ -2107,6 +2116,7 @@ button {
   font-size: 14px;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 97px;
 }
 
 
@@ -2895,7 +2905,7 @@ button {
   width: 95px;
 }
 .skills_JavaScript img{
-  width: 79px;
+  width: 54px;
 }
 
 
@@ -3117,7 +3127,7 @@ margin-top: 81px;
 
 
 .image-list {
-  flex-direction: column; /* 縦並びにする */
+  flex-direction: column; 
   align-items: center;    
 }
 
@@ -3291,24 +3301,24 @@ margin-top: 81px;
   }
   
   .swiper2-prev {
-    left: 0px; /* まず画面の端に置く */
+    left: 0px; 
   }
 
   .swiper2-next {
     right: 0px;
   }
 
-  /* ボタン自体のサイズを小さくして“30px以内”に収まるように */
+  
   .swiper2-prev::after,
   .swiper2-next::after {
-    font-size: 20px; /* 矢印アイコンの大きさを調整 */
+    font-size: 20px; 
   }
 
   .swiper2-prev,
   .swiper2-next {
     width: 28px;
     height: 28px;
-    margin: 0 2px; /* 28px + 2pxで30pxに近づける */
+    margin: 0 2px; 
   }
 
 
@@ -3344,8 +3354,15 @@ margin-top: 81px;
 
   .meishi_wrap_ciel{
     display: block;
-    margin-bottom: 95px;
+    justify-content: center;
   }
+
+  .meishi_wrap_ciel_inner{
+    flex-direction: column;
+    align-items: center;
+}
+
+
   
   /* スマホモックアップ */
   .sh_mock-up{ 
@@ -3369,7 +3386,7 @@ margin-top: 81px;
 }
 
 .meishi_wrap_hayashi_sp {
-  display: block !important;
+  display: block ;
   width: 100%;
   padding: 0 8%;
   margin-bottom: 86px;
@@ -3385,6 +3402,7 @@ margin-top: 81px;
 
 .meishi_yoko img {
   display: block;
+  margin: 0 auto;
 }
 
 .hayashi-prev,
@@ -3444,7 +3462,9 @@ margin-top: 81px;
     max-width: 11px;
   }
   
- 
+  .works_contents_text{
+    margin-bottom: 52px;
+  }
   
   
   .flyer_1 img{
