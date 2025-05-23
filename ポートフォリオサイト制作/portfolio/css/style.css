@@ -454,10 +454,11 @@ picture {
 
 .skills_photo_wrap{
     max-width: 100%;
-    display: flex;
+    display: flex !important;
     justify-content: center; 
     gap: 4.16%;               
-      }
+
+  }
 
 
 .skills_sp{
@@ -579,51 +580,35 @@ picture {
     margin-bottom: 274px;
 }
     
-    .contact_photo_img {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+   
+.contact_photo_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  
-    .postcard {
-      position: relative;
-      max-width: 670px; 
-      
-    }
+.postcard {
+  position: relative;
+  display: inline-block;
+  max-width: 670px;
+}
+
+.stamp {
+  position: absolute;
+  top: -5%;
+  right: -12%;
+  max-width: 180px;
+  opacity: 0;
+  transform: scale(2) rotate(-15deg);
+  transition: all 0.4s ease-out;
+}
+
+.stamp.active {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
 
 
-    .postcard img[alt="contact"] {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; 
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
- 
-    .stamp {
-      position: absolute;
-      top: 5px; 
-      right: -60px; 
-      max-width: 180px; 
-      opacity: 0; 
-      transform: scale(0); 
-      transition: all 0.3s ease-out;
-    }
-
-    
-    .stamp.visible {
-      opacity: 1;
-      transform: scale(1.1); 
-      animation: stampEffect 0.3s ease-out forwards;
-    }
-
-    
-    @keyframes stampEffect {
-      0% { transform: scale(0.8); }
-      50% { transform: scale(1.2); } 
-      100% { transform: scale(1); } 
-    }
 
 
 .thankyou{
