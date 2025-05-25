@@ -3,10 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>works</title>
+        <title>Mill Design portfolio site</title>
         <link rel="stylesheet" href="css/style.css" />
-        <!-- jQuery-->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body class="subpage">
         <header class="header" id="header">
@@ -48,86 +47,96 @@
                 </nav>
             </div>
         </header>
-
-        <section class="works2-1">
-            <div class="works_title_tablet_wrap">
-                <div class="title_wrapper">
-                    <h4 class="works_title fade-in">
-                        カフェ<span class="br-sp"></span>【DESIGN CAFE】<span
-                            class="br-sp"
-                        ></span
-                        >コーディング
-                    </h4>
-                </div>
-                <div class="switch fade-in">
-                    <div class="pc_switch switch1 active">
-                        <img src="Photo/PC@2x.png" alt="PC" />
-                    </div>
-                    <div class="sh_switch switch1">
-                        <img src="Photo/sp_s@2x.png" alt="SP" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="works_tablet_wrap fade-in">
-                <div class="tablet_mock-up">
-                    <img
-                        src="Photo/tablet_mock-up@2x.png"
-                        alt="tablet_mock-up"
-                    />
-                    <div class="scrool_wrap">
-                        <div class="scrool_area">
-                            <img
-                                src="Photo/CAFE_LP_PC.jpg"
-                                alt="tablet_mock-up"
-                            />
+        <section class="contact2">
+            <h2 class="contact_word_img fade-in">
+                <img src="Photo/contact@2x.png" alt="contact" />
+            </h2>
+            <p class="contact_sentece fade-in">
+                ご質問、ご相談等ございましたら、<span class="br-sp"></span
+                >どうぞお気軽にお問い合わせください。
+            </p>
+            <div class="contact_warp fade-in">
+                <form
+                    action=" https://docs.google.com/forms/u/1/d/1cQ2yJtE0z6u7kzo3E7nvb_entfxQN12hzr3WR4b4SPM/previewResponse"
+                    method="post"
+                    target="hidden_iframe"
+                    onsubmit="submitted=true;"
+                >
+                    <div class="form_item">
+                        <div class="label">
+                            <label for="name">氏名</label>
                         </div>
-                    </div>
-                </div>
-                <div class="scroll_down">
-                    <img src="Photo/scroll@2x.png" alt="scroll_down" />
-                </div>
-            </div>
-
-            <div class="works_sp_wrap">
-                <div class="smartphone_mock-up">
-                    <img src="Photo/sp_mock-up@2x.png" alt="tablet_mock-up" />
-
-                    <div class="scrool_wrap_sp">
-                        <div class="scrool_area_sp2">
-                            <img
-                                src="Photo/CAFE_PL_SH.jpg"
-                                alt="tablet_mock-up"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div class="scroll_down_sp">
-                    <img src="Photo/scroll@2x.png" alt="scroll_down" />
-                </div>
-            </div>
-
-            <div class="works_contents_trace fade-in">
-                <p class="works_contents_text">
-                    デザインに合わせて忠実にコーディングを<span
-                        class="br-sp"
-                    ></span
-                    >行いました
-                </p>
-            </div>
-
-            <div class="backtoall_wrap">
-                <a href="works.html" class="scroll_area">
-                    <div class="backtoall">
-                        <img src="Photo/backtoall@2x.png" alt="view more" />
-                    </div>
-                    <div class="back_to_all_yazirushi">
-                        <img
-                            src="Photo/backtoallyazirushi@2x.png"
-                            alt="view more"
+                        <input
+                            type="text"
+                            id="name"
+                            name="entry.20446268"
+                            placeholder="氏名"
+                            required
                         />
                     </div>
-                </a>
+                    <div class="form_item">
+                        <div class="label">
+                            <label for="name_kana">フリガナ</label>
+                        </div>
+                        <input
+                            type="text"
+                            id="name_kana"
+                            name="entry.2052826256"
+                            placeholder="フリガナ"
+                            required
+                        />
+                    </div>
+                    <div class="form_item">
+                        <div class="label">
+                            <label for="question">種別</label>
+                        </div>
+                        <select id="question" name="entry.1223647708" required>
+                            <option value="" disabled selected>
+                                選択してください
+                            </option>
+                            <option value="問い合わせ">問い合わせ</option>
+                            <option value="依頼">依頼</option>
+                            <option value="その他">その他</option>
+                        </select>
+                    </div>
+                    <div class="form_item">
+                        <div class="label">
+                            <label for="email">メールアドレス</label>
+                        </div>
+                        <input
+                            type="email"
+                            id="email"
+                            name="entry.1383788165"
+                            placeholder="メールアドレス"
+                            required
+                        />
+                    </div>
+                    <div class="form_item2">
+                        <div class="label">
+                            <label for="inquiry">お問い合わせ内容</label>
+                        </div>
+                        <textarea
+                            id="inquiry"
+                            name="entry.578840844"
+                            placeholder="問い合わせ内容入力"
+                            required
+                        ></textarea>
+                    </div>
+                    <div class="form_send">
+                        <button type="submit">
+                            <img src="Photo/send@2x.png" alt="send" />
+                        </button>
+                    </div>
+                </form>
+                <script type="text/javascript">
+                    var submitted = false;
+                </script>
+                <iframe
+                    name="hidden_iframe"
+                    id="hidden_iframe"
+                    style="display: none"
+                    onload="if(submitted)  {window.location='thanks.html';}"
+                ></iframe>
             </div>
         </section>
 
@@ -257,17 +266,7 @@
             })(document);
         </script>
 
-        <script>
-            document
-                .getElementById("hamburger")
-                .addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    document
-                        .querySelector(".sp-nav")
-                        .classList.toggle("active");
-                });
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
             const swiper = new Swiper(".swiper", {
                 loop: true,
@@ -276,26 +275,8 @@
                     prevEl: ".swiper-button-prev",
                 },
             });
-        </script>
+        </script> -->
 
-        <script>
-            $(function () {
-                $(".switch1").click(function () {
-                    $(".switch1").removeClass("active");
-                    $(this).addClass("active");
-
-                    const id = $(this).attr("class");
-
-                    if ($(this).hasClass("pc_switch")) {
-                        $(".works_sp_wrap").hide();
-                        $(".works_tablet_wrap").show();
-                    } else if ($(this).hasClass("sh_switch")) {
-                        $(".works_tablet_wrap").hide();
-                        $(".works_sp_wrap").show();
-                    }
-                });
-            });
-        </script>
         <script>
             $(document).ready(function () {
                 $(".hamburger").on("click", function () {
@@ -304,7 +285,6 @@
                 });
             });
         </script>
-
         <script src="script.js"></script>
     </body>
 </html>

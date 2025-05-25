@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>works</title>
+        <title>Mill Design portfolio site</title>
         <link rel="stylesheet" href="css/style.css" />
+        <!-- jQuery -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
         <!-- Slick Carousel -->
         <link
@@ -55,45 +56,35 @@
         </header>
         <section class="works2-1">
             <div class="title_wrapper">
-                <h4 class="works_title_tablet fade-in">
-                    カステラショップ【蘭】<span class="br-sp"></span>SHOP CARD
-                    ＆ LOGO
-                </h4>
+                <h4 class="works_title fade-in">カフェMENUデザイン</h4>
             </div>
 
-            <div class="meishi_slide_wrap">
-                <div class="meishi_slider">
-                    <!-- スライド1：名刺の表＋裏 -->
-                    <div class="meishi_slide fade-in">
-                        <div class="meishi_wrap">
-                            <div class="meishi_omote">
-                                <img src="Photo/2x/RAN1@2x.png" alt="名刺 表" />
-                            </div>
-                            <div class="meishi_ura">
-                                <img src="Photo/2x/RAN2@2x.png" alt="名刺 裏" />
-                            </div>
-                        </div>
+            <div class="works_flyer_wrap fade-in">
+                <!-- PC版 -->
+
+                <div class="works_flyer_wrap pc-only">
+                    <div class="flyer">
+                        <img src="Photo/menu_omote@2x.png" alt="flyer" />
                     </div>
-
-                    <!-- スライド2：ロゴ説明 -->
-                    <div class="slide fade-in">
-                        <div class="logo_meaning">
-                            <img src="Photo/RAN_logo_mean.png" alt="logo" />
-                        </div>
-
-                        <div class="meishi_slide_sp">
-                            <div class="logo_meaning_sp">
-                                <img src="Photo/RAN_sp@2x.png" alt="logo" />
-                            </div>
-                        </div>
+                    <div class="flyer">
+                        <img src="Photo/menu_ura@2x.png" alt="flyer" />
                     </div>
                 </div>
-                <!-- 矢印 -->
-                <div class="meishi-prev">
-                    <img src="Photo/yazirushi3@2x.png" alt="prev arrow" />
+            </div>
+
+            <!-- スマホ用 Swiper -->
+            <div class="works_flyer_wrapper sp-only fade-in">
+                <div class="works_flyer_slider">
+                    <div>
+                        <img src="Photo/menu_omote@2x.png" alt="flyer1" />
+                    </div>
+                    <div><img src="Photo/menu_ura@2x.png" alt="flyer2" /></div>
                 </div>
-                <div class="meishi-next">
-                    <img src="Photo/yazirushi4@2x.png" alt="next arrow" />
+                <div class="swiper1-button-prev">
+                    <img src="Photo/yazirushi3@2x.png" alt="prev" />
+                </div>
+                <div class="swiper1-button-next">
+                    <img src="Photo/yazirushi4@2x.png" alt="next" />
                 </div>
             </div>
 
@@ -102,13 +93,21 @@
                     <li class="works_contents_item">
                         <span class="works_contents_item_category">
                             ターゲット</span
-                        ><span class="works_contents_info">20代~30代女性</span>
+                        ><span class="works_contents_info">30代女性</span>
                     </li>
                     <li class="line"></li>
                     <li class="works_contents_item">
                         <span class="works_contents_item_category"> 目的</span
                         ><span class="works_contents_info"
-                            >コンセプトのカステラを食べるたびに幸せな気持ちになって欲しいを表現したショップカードを作りたい</span
+                            >看板メニューのプリンを分かりやすく表示させ、またお店の雰囲気に合わせたメニュー表を作成したい</span
+                        >
+                    </li>
+                    <li class="line"></li>
+                    <li class="works_contents_item">
+                        <span class="works_contents_item_category">
+                            情報設計</span
+                        ><span class="works_contents_info"
+                            >かための昔懐かしいプリンがおすすめのお店なのでおすすめのプリンを大きめに配置をし、目立つようにまたお店の看板メニューであることがわかるように表示させました</span
                         >
                     </li>
                     <li class="line"></li>
@@ -116,14 +115,16 @@
                         <span class="works_contents_item_category">
                             デザイン</span
                         ><span class="works_contents_info"
-                            >お店のコンセプトを基に優しい雰囲気と全体にカステラが焼き上がっていくイメージで色の変化をつけたイラストを配置してワクワク感を表現、ショップカード全体はカステラのカラーで選定して色のまとまりや、カステラをイメージできるようにを制作しました。</span
+                            >落ちついた雰囲気のお店でもあるのでブラウンの色味と３０代女性ターゲットということで落ちついたピンクベージュを背景に配置し、お店の雰囲気と合わせデザインしました</span
                         >
                     </li>
                     <li class="line"></li>
                     <li class="works_contents_item">
                         <span class="works_contents_item_category">
                             使用ツール</span
-                        ><span class="works_contents_info">Illustrator</span>
+                        ><span class="works_contents_info"
+                            >Illustrator・Photoshop</span
+                        >
                     </li>
                     <li class="line"></li>
                     <li class="works_contents_item">
@@ -141,25 +142,27 @@
                     </div>
                     <div class="works-line_sh"></div>
                 </div>
-                <div class="works_contents_info_sh">20代~30代女性</div>
+                <div class="works_contents_info_sh">30代女性</div>
                 <div class="works_contents_sh">
                     <div class="works_contents_item_category_sh">目的</div>
                     <div class="works-line_sh"></div>
                 </div>
                 <div class="works_contents_info_sh">
-                    コンセプトのカステラを食べるたびに幸せな気持ちになって欲しいを表現したショップカードを作りたい
+                    看板メニューのプリンを分かりやすく表示させ、またお店の雰囲気に合わせたメニュー表を作成したい
                 </div>
                 <div class="works_contents_sh">
                     <div class="works_contents_item_category_sh">情報設計</div>
                     <div class="works-line_sh"></div>
                 </div>
-                <div class="works_contents_info_sh"></div>
+                <div class="works_contents_info_sh">
+                    かための昔懐かしいプリンがおすすめのお店なのでおすすめのプリンを大きめに配置をし、目立つようにまたお店の看板メニューであることがわかるように表示させました
+                </div>
                 <div class="works_contents_sh">
                     <div class="works_contents_item_category_sh">デザイン</div>
                     <div class="works-line_sh"></div>
                 </div>
                 <div class="works_contents_info_sh">
-                    お店のコンセプトを基に優しい雰囲気と全体にカステラが焼き上がっていくイメージで色の変化をつけたイラストを配置してワクワク感を表現、ショップカード全体はカステラのカラーで選定して色のまとまりや、カステラをイメージできるようにを制作しました
+                    落ちついた雰囲気のお店でもあるのでブラウンの色味と３０代女性ターゲットということで落ちついたピンクベージュを背景に配置し、お店の雰囲気と合わせデザインしました
                 </div>
                 <div class="works_contents_sh">
                     <div class="works_contents_item_category_sh">
@@ -167,7 +170,7 @@
                     </div>
                     <div class="works-line_sh"></div>
                 </div>
-                <div class="works_contents_info_sh">Illustrator</div>
+                <div class="works_contents_info_sh">Illustrator・Photoshop</div>
                 <div class="works_contents_sh">
                     <div class="works_contents_item_category_sh">制作期間</div>
                     <div class="works-line_sh"></div>
@@ -189,6 +192,7 @@
                 </a>
             </div>
         </section>
+
         <footer class="footer-pc">
             <div class="footer-inner">
                 <nav class="footer-nav">
@@ -248,7 +252,6 @@
             </div>
             <div class="footer-left_nav-sp">© 2025 MILKY</div>
         </footer>
-
         <script>
             (function (d) {
                 var config = {
@@ -315,16 +318,6 @@
             })(document);
         </script>
 
-        <script>
-            document
-                .getElementById("hamburger")
-                .addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    document
-                        .querySelector(".sp-nav")
-                        .classList.toggle("active");
-                });
-        </script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
             const swiper = new Swiper(".swiper", {
@@ -337,22 +330,18 @@
         </script>
         <script>
             $(function () {
-                $(".meishi_slider").slick({
+                var prevArrow = document.querySelector(".swiper1-button-prev");
+                var nextArrow = document.querySelector(".swiper1-button-next");
+
+                $(".works_flyer_slider").slick({
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    prevArrow: prevArrow,
+                    nextArrow: nextArrow,
                     infinite: true,
-                    prevArrow: $(".meishi-prev"),
-                    nextArrow: $(".meishi-next"),
                 });
             });
         </script>
-        <!-- <script>
-$(window).on('load', function () {
-    const referenceHeight = $('.meishi_slide').outerHeight();
-    $('.logo_meaning_sp').height(referenceHeight);
-  });
-</script> -->
-
         <script>
             $(document).ready(function () {
                 $(".hamburger").on("click", function () {
