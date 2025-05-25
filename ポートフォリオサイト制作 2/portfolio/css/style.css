@@ -2095,7 +2095,7 @@ button {
 .works_contents_sh{
   display: flex;
   margin-bottom: 19px;
-
+  width: 100%;
 }
 
 
@@ -2140,7 +2140,7 @@ button {
 .line{
   height: 1px;
   background-color: #c5efef;
-  width: 89%;
+  width: 100%;
 }
 
 
@@ -3240,7 +3240,7 @@ margin-top: 81px;
   
   .works-line_sh{
     flex-grow: 1;
-    max-width: 100%;
+
     height: 1px;
     display: flex;
     justify-content: flex-end;
